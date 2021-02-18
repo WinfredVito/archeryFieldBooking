@@ -1,0 +1,6 @@
+<view class="page">
+  <view wx:for="{{id}}" class="weui-cells">
+    <text>预约编号为：</text>
+    {{item.id}}
+  </view> 
+</view>

@@ -1,0 +1,11 @@
+<!--pages/myBookings/myBookings.wxml-->
+<view class="page">
+  <mp-cell value="左滑可以查看详情与删除"></mp-cell>
+  <view wx:for="{{bookingDates}}" class="weui-cells">
+    <mp-slideview buttons="{{slideButtons}}" icon="{{true}}" bindbuttontap="slideButtonTap">
+      <view class="weui-cell">
+        {{item.date}}
+      </view>
+    </mp-slideview>
+  </view>
+</view>
