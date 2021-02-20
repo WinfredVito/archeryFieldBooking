@@ -1,2 +1,8 @@
 <!--pages/scan/scan.wxml-->
-<text>pages/scan/scan.wxml</text>
+<view class="page">
+<button style="margin-top:50px;" bindtap="getQRCode" type="primary">扫一扫</button>
+<view>{{ qRCodeMsg }}</view>
+<mp-dialog title="test1" show="{{showOneButtonDialog}}" buttons="{{oneButton}}">
+        <view>test content1</view>
+    </mp-dialog>
+</view>
